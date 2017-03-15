@@ -1,0 +1,9 @@
+Package: GenDP
+Type: Package
+Title: Tools for genotyping data processing
+Date: 2017-03-10
+Version: 1.0.0
+Author: Jan Matula
+Maintainer: Jan Matula <jan.matula@gypri.cz>
+Description: Package for processing of next generation sequencing data in infectious disease using a novel algorithm SSAHA.
+RoxygenNote: 6.0.1
