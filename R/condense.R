@@ -21,7 +21,7 @@ condense <- function (fasta_soubor, prah=10){
   {  
     x <- x[-grep("N", x, ignore.case = T)]
   }
-  data<-as.data.frame(table(x))
+  data<-as.data.frame(BiocGenerics::table(x))
   data<-data[order(data$Freq, decreasing = TRUE), ]
   pocet<-sum(data[,2]>prah)
   kond<-DNAStringSet(as.vector.factor(data[1:pocet,1]))
